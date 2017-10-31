@@ -3,7 +3,7 @@ import numpy as np
 import imutils
 
 # Load an Image and Convert it to HSV
-frame = cv2.imread("./images/not_charging.jpg", 1)
+frame = cv2.imread("./images/sample.jpg", 1)
 image = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 circularKernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
